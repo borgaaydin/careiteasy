@@ -8174,7 +8174,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .topContainer {
   height: 100%;
-  margin: 40px 0 0 0;
+  margin: 0;
   min-height: 888px; }
 
 footer {
@@ -8234,6 +8234,13 @@ footer {
     color: #ff5000;
     font-size: 50px;
     float: right; }
+
+.logoContainer img {
+  position: absolute;
+  margin: 20px; }
+
+.bannerContainer {
+  margin-top: 20px; }
 
 .white-block {
   padding: 40px 0;
@@ -8339,8 +8346,8 @@ footer {
   background-color: #ff5000;
   position: fixed;
   z-index: 16;
-  bottom: 100px;
-  right: 100px;
+  bottom: 64px;
+  right: 64px;
   text-align: center;
   opacity: 0.77; }
   .hemenAlRoundIcon:hover {
@@ -8460,8 +8467,8 @@ address {
     opacity: 0; } }
 
 .hemenAlButton {
-  margin: 60px 0;
-  padding: 4px 60px;
+  margin: 30px 0;
+  padding: 2px 50px;
   border-radius: 4px;
   background-color: transparent;
   font-size: 24px;
@@ -8480,7 +8487,7 @@ address {
   border: 3px solid #ff5000;
   color: white;
   position: absolute;
-  left: calc(50% - 121px);
+  left: calc(50% - 130px);
   bottom: 0;
   font-size: 32px; }
   .blockButton:hover {
