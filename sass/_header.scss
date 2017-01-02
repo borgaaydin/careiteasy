@@ -1,0 +1,70 @@
+
+.bannerSlogan {
+  margin: 25vh 0 0 0;
+}
+
+.menu_nav {
+  margin: 80px 0 10px;
+}
+
+.menu_nav_container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  li {
+    margin-right: 12px;
+    display: table-cell;
+    width: 1%;
+    float: none;
+
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      color: $primary-color;
+
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    img {
+      display: none;
+      position: absolute;
+      max-width: 80%;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      img {
+        display: block;
+      }
+      a {
+        color: $tertiary-color;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.bannerSlogan {
+  h1 {
+    span {
+      display: block;
+      font-weight: 100;
+
+      &:first-child {
+        color: $primary-color;
+        font-size: 40px;
+      }
+      &:nth-child(2) {
+        color: $tertiary-color;
+        font-size: 50px;
+        float: right;
+      }
+    }
+  }
+}

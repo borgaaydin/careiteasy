@@ -1,0 +1,23 @@
+{
+  "name": "careiteasy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "careiteasy front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Borga AYDIN",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-sass": "^2.3.2",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-uncomment-it": "^1.0.0",
+    "gulp-uncss": "^1.0.6"
+  }
+}

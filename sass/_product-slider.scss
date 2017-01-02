@@ -1,0 +1,41 @@
+$animation-time: 6s;
+$delay: 1s;
+
+.product-image-slider {
+  height: 800px;
+  position: relative;
+}
+.close-bottle, .open-bottle{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  animation-delay: $delay;
+  -webkit-animation-delay: $delay;
+}
+.close-bottle {
+  background: url("../img/careiteasy_sise_kutu_kapali.jpg") no-repeat center;
+  background-size: contain;
+  animation:fade $animation-time infinite;
+  -webkit-animation:fade $animation-time infinite;
+}
+
+.open-bottle {
+  background: url("../img/careiteasy_sise_kutu_acik.jpg") no-repeat center;
+  background-size: contain;
+  animation:fade2 $animation-time infinite;
+  -webkit-animation:fade2 $animation-time infinite;
+}
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  50% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  50% {opacity: 1}
+  100% { opacity: 0}
+}
