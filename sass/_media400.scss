@@ -16,6 +16,20 @@
   .block3>img {
     left: 0;
   }
+
+  .menu_nav_container li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu_nav_container li a {
+    font-size: 14px;
+  }
+
+  .bannerSlogan h1 span:first-child {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -26,19 +40,17 @@
   }
 
   footer {
-    height: 100%;
+    height: auto;
   }
 
   .turkeyLogo img {
-    margin-top: 10px;
+    margin: 10px 0 20px;
   }
 
   .hemenAlButton {
     margin: 44px 0;
   }
-}
 
-@media (max-width: 768px) {
   .topContainer {
     margin-top: 4px;
   }
@@ -48,10 +60,12 @@
 
     img {
       max-height: 160px;
+      position: relative;
+      margin: 10px;
     }
   }
   .menu_nav {
-    margin: 10px 0 10px;
+    margin: 24px 0 0;
   }
 
   .menu_nav_container {
@@ -110,7 +124,8 @@
   }
 
   .back-block {
-    height: 200px;
+    height: auto;
+    max-width: 100%;
   }
 
   .socialIcons{

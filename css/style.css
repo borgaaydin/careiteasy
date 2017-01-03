@@ -8175,13 +8175,13 @@ h1, h2, h3, h4, h5, h6 {
 .topContainer {
   height: 100%;
   margin: 0;
-  min-height: 888px; }
+  min-height: 800px; }
 
 footer {
   background-color: #b31aab;
   background-image: url("../img/footerTexture_copy.png");
   background-position: 0 8px;
-  border-top: 1px solid #d7006d;
+  border-top: 1px solid #b31aab;
   width: 100%;
   height: 360px;
   z-index: 30;
@@ -8241,6 +8241,9 @@ footer {
 
 .bannerContainer {
   margin-top: 20px; }
+
+.menuContainer {
+  max-width: 1200px; }
 
 .white-block {
   padding: 40px 0;
@@ -8466,6 +8469,18 @@ address {
   100% {
     opacity: 0; } }
 
+@media (max-height: 840px) {
+  .product-image-slider {
+    height: 700px; } }
+
+@media (max-height: 760px) {
+  .product-image-slider {
+    height: 650px; } }
+
+@media (max-height: 730px) {
+  .product-image-slider {
+    height: 600px; } }
+
 .hemenAlButton {
   margin: 30px 0;
   padding: 2px 50px;
@@ -8504,28 +8519,36 @@ address {
   .block2 > img {
     margin-top: 16px; }
   .block3 > img {
-    left: 0; } }
+    left: 0; }
+  .menu_nav_container li a {
+    font-size: 16px; } }
+
+@media (max-width: 992px) {
+  .menu_nav_container li a {
+    font-size: 14px; }
+  .bannerSlogan h1 span:first-child {
+    font-size: 36px; } }
 
 @media (max-width: 768px) {
   .footerMenu {
     margin: 20px 0 0 0;
     text-align: center; }
   footer {
-    height: 100%; }
+    height: auto; }
   .turkeyLogo img {
-    margin-top: 10px; }
+    margin: 10px 0 20px; }
   .hemenAlButton {
-    margin: 44px 0; } }
-
-@media (max-width: 768px) {
+    margin: 44px 0; }
   .topContainer {
     margin-top: 4px; }
   .logoContainer {
     text-align: center; }
     .logoContainer img {
-      max-height: 160px; }
+      max-height: 160px;
+      position: relative;
+      margin: 10px; }
   .menu_nav {
-    margin: 10px 0 10px; }
+    margin: 24px 0 0; }
   .menu_nav_container li {
     display: block;
     width: 100%;
@@ -8555,7 +8578,8 @@ address {
       font-size: 32px;
       margin: 16px 0 -5px; }
   .back-block {
-    height: 200px; }
+    height: auto;
+    max-width: 100%; }
   .socialIcons a {
     width: 50px;
     height: 50px;

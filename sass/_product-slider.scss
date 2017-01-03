@@ -39,3 +39,21 @@ $delay: 1s;
   50% {opacity: 1}
   100% { opacity: 0}
 }
+
+@media (max-height: 840px) {
+  .product-image-slider {
+    height: 700px;
+  }
+}
+
+@media (max-height: 760px) {
+  .product-image-slider {
+    height: 650px;
+  }
+}
+
+@media (max-height: 730px) {
+  .product-image-slider {
+    height: 600px;
+  }
+}
