@@ -59,7 +59,12 @@ gulp.task('default', function () {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(uncss({
-            html: ['index.html', 'http://localhost:8888/careiteasy/']
+            html: ['index.html', 'http://localhost:8888/careiteasy/'],
+            ignore: [
+                ".animated",
+                ".hinge",
+                ".fadeInRightBig"
+            ]
         }))
         .pipe(stripCssComments({preserve: false}))
         .pipe(nano())
