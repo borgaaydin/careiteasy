@@ -8175,7 +8175,7 @@ h1, h2, h3, h4, h5, h6 {
 .topContainer {
   height: 100%;
   margin: 0;
-  min-height: 800px; }
+  min-height: 500px; }
 
 footer {
   background-color: #b31aab;
@@ -8190,7 +8190,7 @@ footer {
     color: white; }
 
 .bannerSlogan {
-  margin: 25vh 0 0 0; }
+  margin: 34vh 0 0 0; }
 
 .menu_nav {
   margin: 80px 0 10px; }
@@ -8224,7 +8224,7 @@ footer {
 
 .bannerSlogan h1 span {
   display: block;
-  font-weight: 100; }
+  font-weight: 400; }
   .bannerSlogan h1 span:first-child {
     color: #d7006d;
     font-size: 40px; }
@@ -8487,8 +8487,12 @@ address {
   .product-image-slider {
     height: 420px; } }
 
+@media (max-height: 550px) {
+  .product-image-slider {
+    height: 360px; } }
+
 .hemenAlButton {
-  margin: 30px 0;
+  margin: 15px 0;
   padding: 2px 50px;
   border-radius: 4px;
   background-color: transparent;

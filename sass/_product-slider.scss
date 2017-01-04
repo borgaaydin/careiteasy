@@ -69,3 +69,9 @@ $delay: 1s;
     height: 420px;
   }
 }
+
+@media (max-height: 550px) {
+  .product-image-slider {
+    height: 360px;
+  }
+}
