@@ -48,7 +48,6 @@
         .topContainer {
             height: 100%;
             margin: 0;
-            min-height: 500px;
         }
 
     </style>
@@ -58,7 +57,7 @@
         <i class="fa fa-cart-plus" aria-hidden="true"></i>
     </a>
 
-    <div class="topContainer">
+    <div class="topContainer" id="top">
         <header>
             <div class="container-fluid menuContainer">
                 <div class="col-xs-6 col-sm-3 logoContainer">
@@ -134,7 +133,7 @@
     <div id="kullanim" class="container-fluid white-block">
         <div class="container">
             <h2>
-                KOLAY SÜRÜM KOLAY KURUMA MÜKEMMEL SONUÇ
+                <span>KOLAY SÜRÜM</span> <span>KOLAY KURUMA</span> <span>MÜKEMMEL SONUÇ</span>
             </h2>
             <p>
                 Ojenizi sürmeye başlamadan önce tırnaklarınızı Manikür Bandı ile oje sürmeye hazırlayın. Manikür bandını ojenin bulaşmasını istemediğiniz bölgeye fırçası yardımı ile kolayca uygulayın. Ojenizi uygulamadan önce yaklaşık iki dakika manikür bandının kuruması için bekleyin. Manikür Bandı kuruduktan sonra ojenizi taşırma derdi olmadan rahatça sürün. Ojenin kurumasını beklemeden manikür bandını elinizle ya da bir cımbız yardımı ile kolayca soyun. Mükemmel manikürününüz tadını çıkartın.
@@ -143,21 +142,30 @@
                 <div class="howToSlider">
                     <div>
                         <img src="img/howToSlider/nasil1.png" srcset="img/howToSlider/nasil1@2x.png" alt="Kolay Sürüm 1" class="img-responsive">
+                        <p>
+                            SÜRÜN
+                        </p>
                     </div>
                     <div>
                         <img src="img/howToSlider/nasil2.png" srcset="img/howToSlider/nasil2@2x.png" alt="Kolay Sürüm 2" class="img-responsive">
+                        <p>
+                            BEKLEYİN
+                        </p>
                     </div>
                     <div>
                         <img src="img/howToSlider/nasil3.png" srcset="img/howToSlider/nasil3@2x.png" alt="Kolay Sürüm 3" class="img-responsive">
+                        <p>
+                            ÇIKARTIN
+                        </p>
                     </div>
                     <div>
                         <img src="img/howToSlider/nasil4.png" srcset="img/howToSlider/nasil4@2x.png" alt="Kolay Sürüm 4" class="img-responsive">
+                        <p>
+                            SONUÇ: MÜKEMMEL
+                        </p>
                     </div>
                 </div>
             </div>
-            <p class="warning-text">
-                *Ürünün kuruma süresi ortamın sıcaklık ve nem oranına göre değişkenlik gösterebilir.
-            </p>
         </div>
     </div>
 
@@ -260,6 +268,9 @@
                 </div>
             </div>
         </div>
+        <a href="#top" class="animated upIcon">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </a>
     </footer>
 
     <script src="js/jquery.min.js"></script>

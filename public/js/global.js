@@ -9,6 +9,11 @@ $(function() {
     //     $.cookie('tempScrollTop', $(window).scrollTop());
     // }
 
+    if (!("ontouchstart" in document.documentElement)) {
+        $('.menu_nav_container').addClass("no-touch");
+        $('.upIcon').addClass("no-touch");
+    }
+
     $('.howToSlider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

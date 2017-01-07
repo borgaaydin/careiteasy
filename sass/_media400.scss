@@ -34,6 +34,9 @@
 
 @media (max-width: 768px) {
 
+  .product-image-slider {
+    height: 500px;
+  }
   .footerMenu {
     margin: 20px 0 0 0;
     text-align: center;
@@ -52,6 +55,7 @@
   }
 
   .topContainer {
+    min-height: 700px;
     margin-top: 4px;
   }
 
@@ -125,6 +129,20 @@
     }
   }
 
+  .upIcon{
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    bottom: 80px;
+    left: 20px;
+
+
+    i{
+      font-size: 32px;
+      margin: 16px 0 -5px;
+    }
+  }
+
   .back-block {
     height: auto;
     max-width: 100%;
@@ -145,7 +163,11 @@
   .white-block{
     h2 {
       margin: 0;
-      font-size: 30px;
+      font-size: 22px;
+
+      span {
+        display: block;
+      }
     }
   }
 
@@ -155,5 +177,10 @@
 
   .slick-next {
     right: -15px;
+  }
+
+  .menu_nav_container li img,
+  .menu_nav_container.no-touch li:hover img{
+    display: none;
   }
 }
