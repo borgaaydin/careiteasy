@@ -1,14 +1,36 @@
 /**
  * Created by borga on 2016.
  */
-$(function() {
-    // if($.cookie('tempScrollTop')){
-    //     $(window).scrollTop($.cookie('tempScrollTop'));
-    // }
-    // else {
-    //     $.cookie('tempScrollTop', $(window).scrollTop());
-    // }
+function foamDistance(index){
+    return $(".white-block:eq("+(index+1)+")").offset().top -
+        $(".white-block:eq("+(index)+")").offset().top -
+        $(".white-block:eq("+(index)+")").height()
+}
 
+function getBackgroundSize(index) {
+    var movingSection = $('.moving');
+    var backgroundImage = new Image();
+    backgroundImage.src = $('.moving:eq('+index+')').attr("src");
+
+    var width = backgroundImage.width;
+    var height = backgroundImage.height;
+
+    var imageRatio = width/height;
+    var coverRatio = movingSection.outerWidth()/movingSection.outerHeight();
+
+    if (imageRatio >= coverRatio) {
+        var coverHeight = movingSection.outerHeight();
+        var scale = (coverHeight / height);
+        var coverWidth = width * scale;
+    } else {
+        var coverWidth = movingSection.outerWidth();
+        var scale = (coverWidth / width);
+        var coverHeight = height * scale;
+    }
+    return coverHeight;
+}
+
+$(function() {
     if (!("ontouchstart" in document.documentElement)) {
         $('.menu_nav_container').addClass("no-touch");
         $('.upIcon').addClass("no-touch");
@@ -41,7 +63,6 @@ $(function() {
 
     $(window).scroll(function() {
         var movingSection = $('.moving');
-        // $.cookie('tempScrollTop', $(window).scrollTop());
 
         if($(window).scrollTop()>$(this).height()) {
             $(".hemenAlRoundIcon").removeClass("hidden").removeClass("hinge").addClass("fadeInRightBig");
@@ -71,40 +92,4 @@ $(function() {
             });
         }
     });
-
-    function foamDistance(index){
-        return $(".white-block:eq("+(index+1)+")").offset().top -
-            $(".white-block:eq("+(index)+")").offset().top -
-            $(".white-block:eq("+(index)+")").height()
-    }
-
-    function getBackgroundSize(index) {
-        var movingSection = $('.moving');
-        var backgroundImage = new Image();
-        backgroundImage.src = $('.moving:eq('+index+')').attr("src");
-
-        var width = backgroundImage.width;
-        var height = backgroundImage.height;
-
-        /* Step 1 - Get the ratio of the div + the image */
-        var imageRatio = width/height;
-        var coverRatio = movingSection.outerWidth()/movingSection.outerHeight();
-
-        /* Step 2 - Work out which ratio is greater */
-        if (imageRatio >= coverRatio) {
-            /* The Height is our constant */
-            var coverHeight = movingSection.outerHeight();
-            var scale = (coverHeight / height);
-            var coverWidth = width * scale;
-        } else {
-            /* The Width is our constant */
-            var coverWidth = movingSection.outerWidth();
-            var scale = (coverWidth / width);
-            var coverHeight = height * scale;
-        }
-
-        return coverHeight;
-
-    }
-
 });
