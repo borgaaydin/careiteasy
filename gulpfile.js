@@ -63,8 +63,7 @@ gulp.task('default', function () {
             ignore: [
                 ".animated",
                 ".hinge",
-                ".fadeInRightBig",
-                ".menu_nav_container.no-touch li:hover"
+                ".fadeInRightBig"
             ]
         }))
         .pipe(stripCssComments({preserve: false}))

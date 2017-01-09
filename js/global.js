@@ -32,8 +32,8 @@ function getBackgroundSize(index) {
 
 $(function() {
     if (!("ontouchstart" in document.documentElement)) {
-        $('.menu_nav_container').addClass("no-touch");
-        $('.upIcon').addClass("no-touch");
+        $('.menu_nav_container').addClass("noTouch");
+        $('.upIcon').addClass("noTouch");
     }
 
     $('.howToSlider').slick({
