@@ -2,9 +2,9 @@
  * Created by borga on 2016.
  */
 function foamDistance(index){
-    return $(".white-block:eq("+(index+1)+")").offset().top -
-        $(".white-block:eq("+(index)+")").offset().top -
-        $(".white-block:eq("+(index)+")").height()
+    return $(".parallax-block:eq("+(index+1)+")").offset().top -
+        $(".parallax-block:eq("+(index)+")").offset().top -
+        $(".parallax-block:eq("+(index)+")").height()
 }
 
 function getBackgroundSize(index) {
@@ -34,6 +34,15 @@ $(function() {
     if (!("ontouchstart" in document.documentElement)) {
         $('.menu_nav_container').addClass("noTouch");
         $('.upIcon').addClass("noTouch");
+    }
+
+    if($(window).width()<769) {
+        var drop = $(".myAccount");
+        drop.off("hover");
+
+        drop.click(function() {
+            $(".dropdown").slideToggle("slow");
+        });
     }
 
     $('.howToSlider').slick({
@@ -74,7 +83,7 @@ $(function() {
             movingSection.each(function(i){
                 var backHeight = getBackgroundSize(i);
 
-                var delta = $(window).scrollTop()-$(".white-block:eq("+i+")").offset().top;
+                var delta = $(window).scrollTop()-$(".parallax-block:eq("+i+")").offset().top;
 
                 var x = 0;
 

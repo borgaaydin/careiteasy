@@ -183,4 +183,18 @@
   .menu_nav_container.noTouch li:hover img{
     display: none;
   }
+
+  .menu_nav_container li.myAccount {
+
+    &:hover {
+      .dropdown{
+        display: none;
+      }
+    }
+    .dropdown {
+      ul {
+       position: relative;
+      }
+    }
+  }
 }

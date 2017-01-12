@@ -15,10 +15,10 @@
   display: flex;
   justify-content: space-between;
 
-  li {
+  >li {
     position: relative;
 
-    a {
+    >a {
       font-size: 18px;
       font-weight: 400;
       color: $primary-color;
@@ -34,17 +34,70 @@
       position: absolute;
     }
   }
+
+  li.myAccount {
+    i {
+      color: $primary-color;
+      vertical-align: text-top;
+    }
+
+    &:hover {
+      i {
+        color: $tertiary-color;
+      }
+
+      .dropdown {
+        display: block;
+      }
+    }
+
+    .dropdown {
+      display: none;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 30;
+
+        >li {
+          padding: 10px 6px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+          border-right: 1px solid rgba(0, 0, 0, 0.12);
+          border-left: 1px solid rgba(0, 0, 0, 0.12);
+          border-top: 1px solid rgba(0, 0, 0, 0.04);
+          border-radius: 10px;
+          margin: 2px 0;
+          background-color: #fcfbfb;
+        }
+
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: $primary-color;
+          
+          &:focus,
+          &:hover {
+            text-decoration: none;
+            color: $tertiary-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }
 
 .menu_nav_container.noTouch {
-  li{
+  >li{
     &:hover {
       cursor: pointer;
 
       img {
         display: block;
       }
-      a {
+      >a {
         color: $tertiary-color;
         text-decoration: none;
         cursor: pointer;
