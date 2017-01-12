@@ -183,12 +183,17 @@
   .menu_nav_container.noTouch li:hover img{
     display: none;
   }
+  
 
   .menu_nav_container li.myAccount {
 
     &:hover {
       .dropdown{
         display: none;
+      }
+      
+      i {
+        color: $primary-color;
       }
     }
     .dropdown {

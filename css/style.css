@@ -8699,5 +8699,7 @@ address {
     display: none; }
   .menu_nav_container li.myAccount:hover .dropdown {
     display: none; }
+  .menu_nav_container li.myAccount:hover i {
+    color: #d7006d; }
   .menu_nav_container li.myAccount .dropdown ul {
     position: relative; } }
