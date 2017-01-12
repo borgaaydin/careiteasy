@@ -41,7 +41,7 @@ $(function() {
         drop.off("hover");
 
         drop.click(function() {
-            $(".dropdown").slideToggle();
+            $(".dropdown").slideToggle("slow");
         });
     }
 

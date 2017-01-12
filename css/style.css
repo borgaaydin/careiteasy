@@ -8223,19 +8223,17 @@ footer {
   .menu_nav_container li.myAccount i {
     color: #d7006d;
     vertical-align: text-top; }
-  .menu_nav_container li.myAccount:hover i {
-    color: #ff5000; }
-  .menu_nav_container li.myAccount:hover .dropdown {
-    display: block; }
   .menu_nav_container li.myAccount .dropdown {
+    display: block; }
+  .menu_nav_container .dropdown {
     display: none; }
-    .menu_nav_container li.myAccount .dropdown ul {
+    .menu_nav_container .dropdown ul {
       list-style: none;
       padding: 0;
       position: absolute;
       width: 100%;
       z-index: 30; }
-      .menu_nav_container li.myAccount .dropdown ul > li {
+      .menu_nav_container .dropdown ul > li {
         padding: 10px 6px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.22);
         border-right: 1px solid rgba(0, 0, 0, 0.12);
@@ -8244,23 +8242,25 @@ footer {
         border-radius: 10px;
         margin: 2px 0;
         background-color: #fcfbfb; }
-      .menu_nav_container li.myAccount .dropdown ul a {
+      .menu_nav_container .dropdown ul a {
         font-size: 14px;
         font-weight: 400;
         color: #d7006d; }
-        .menu_nav_container li.myAccount .dropdown ul a:focus, .menu_nav_container li.myAccount .dropdown ul a:hover {
+        .menu_nav_container .dropdown ul a:focus, .menu_nav_container .dropdown ul a:hover {
           text-decoration: none;
           color: #ff5000;
           cursor: pointer; }
 
-.menu_nav_container.noTouch > li:hover {
+.menu_nav_container.noTouch > li:hover i {
+  color: #ff5000; }
+
+.menu_nav_container.noTouch > li:hover img {
+  display: block; }
+
+.menu_nav_container.noTouch > li:hover > a {
+  color: #ff5000;
+  text-decoration: none;
   cursor: pointer; }
-  .menu_nav_container.noTouch > li:hover img {
-    display: block; }
-  .menu_nav_container.noTouch > li:hover > a {
-    color: #ff5000;
-    text-decoration: none;
-    cursor: pointer; }
 
 .bannerSlogan h1 span {
   display: block;
