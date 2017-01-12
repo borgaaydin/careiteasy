@@ -8627,7 +8627,7 @@ address {
   .hemenAlButton {
     margin: 44px 0; }
   .topContainer {
-    min-height: 700px;
+    min-height: 880px;
     margin-top: 4px; }
   .logoContainer {
     text-align: center; }
@@ -8657,7 +8657,8 @@ address {
   .close-bottle, .open-bottle {
     background-position: top; }
   .blockButton {
-    display: none; }
+    position: relative;
+    margin-top: -100px; }
   .hemenAlRoundIcon {
     width: 64px;
     height: 64px;

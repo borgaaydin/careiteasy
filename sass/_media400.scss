@@ -55,7 +55,7 @@
   }
 
   .topContainer {
-    min-height: 700px;
+    min-height: 880px;
     margin-top: 4px;
   }
 
@@ -112,7 +112,8 @@
   }
 
   .blockButton {
-    display: none;
+    position: relative;
+    margin-top: -100px;
   }
 
   .hemenAlRoundIcon{
