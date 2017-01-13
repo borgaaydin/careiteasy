@@ -8324,8 +8324,7 @@ footer {
 .block2 {
   background-image: url("../img/block2-back.jpg"); }
   .block2 > img {
-    position: absolute;
-    margin-top: 32px; }
+    position: absolute; }
 
 .block3 {
   background-image: url("../img/block3-back.jpg"); }
@@ -8604,7 +8603,7 @@ address {
   .block2 > img {
     margin-top: 16px; }
   .block3 > img {
-    left: 0; }
+    left: 10%; }
   .menu_nav_container li a {
     font-size: 16px; } }
 
@@ -8615,6 +8614,8 @@ address {
     font-size: 36px; } }
 
 @media (max-width: 768px) {
+  .block3 > img {
+    left: 17%; }
   .product-image-slider {
     height: 500px;
     margin: 46px 0 -100px 0; }
@@ -8694,7 +8695,7 @@ address {
   .slick-prev {
     left: -15px; }
   .slick-next {
-    right: -15px; }
+    right: -13px; }
   .menu_nav_container li img,
   .menu_nav_container.noTouch li:hover img {
     display: none; }

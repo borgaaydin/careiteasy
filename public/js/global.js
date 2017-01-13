@@ -31,9 +31,10 @@ function getBackgroundSize(index) {
 }
 
 $(function() {
-    if (!("ontouchstart" in document.documentElement)) {
+    if (("ontouchstart" in document.documentElement)) {
         $('.menu_nav_container').addClass("noTouch");
         $('.upIcon').addClass("noTouch");
+        $('.hemenAlRoundIcon').addClass("noTouch");
     }
 
     if($(window).width()<769) {

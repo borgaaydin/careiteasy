@@ -14,7 +14,7 @@
   }
 
   .block3>img {
-    left: 0;
+    left: 10%;
   }
 
   .menu_nav_container li a {
@@ -33,6 +33,10 @@
 }
 
 @media (max-width: 768px) {
+
+  .block3>img {
+    left: 17%;
+  }
 
   .product-image-slider {
     height: 500px;
@@ -175,7 +179,7 @@
   }
 
   .slick-next {
-    right: -15px;
+    right: -13px;
   }
 
   .menu_nav_container li img,
