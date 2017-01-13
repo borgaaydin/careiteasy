@@ -36,6 +36,7 @@
 
   .product-image-slider {
     height: 500px;
+    margin: 46px 0 -100px 0;
   }
   .footerMenu {
     margin: 20px 0 0 0;
@@ -55,7 +56,7 @@
   }
 
   .topContainer {
-    min-height: 880px;
+    min-height: 820px;
     margin-top: 4px;
   }
 
@@ -65,7 +66,7 @@
     img {
       max-height: 160px;
       position: relative;
-      margin: 10px;
+      margin: 30px 10px 10px 10px;
     }
   }
   .menu_nav {
@@ -103,17 +104,14 @@
     }
   }
 
-  .product-image-slider {
-    margin-top: 46px;
-  }
-
   .close-bottle, .open-bottle {
     background-position: top;
   }
 
   .blockButton {
     position: relative;
-    margin-top: -100px;
+    margin: 0 auto -100px;
+    left: calc(50% - 138px);
   }
 
   .hemenAlRoundIcon{

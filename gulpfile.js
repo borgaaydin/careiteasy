@@ -59,7 +59,11 @@ gulp.task('default', function () {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(uncss({
-            html: ['index.html', 'landingPage.html', 'http://localhost:8888/careiteasy/'],
+            html: ['index.html',
+                'landingPage.html',
+                'http://localhost:8888/careiteasy/',
+                'http://185.28.3.244:91/Order/ShoppingCart',
+                'http://185.28.3.244:91/giris?type=kayit',],
             ignore: [
                 ".animated",
                 ".hinge",

@@ -8616,7 +8616,8 @@ address {
 
 @media (max-width: 768px) {
   .product-image-slider {
-    height: 500px; }
+    height: 500px;
+    margin: 46px 0 -100px 0; }
   .footerMenu {
     margin: 20px 0 0 0;
     text-align: center; }
@@ -8627,14 +8628,14 @@ address {
   .hemenAlButton {
     margin: 44px 0; }
   .topContainer {
-    min-height: 880px;
+    min-height: 820px;
     margin-top: 4px; }
   .logoContainer {
     text-align: center; }
     .logoContainer img {
       max-height: 160px;
       position: relative;
-      margin: 10px; }
+      margin: 30px 10px 10px 10px; }
   .menu_nav {
     margin: 24px 0 0; }
   .menu_nav_container {
@@ -8652,13 +8653,12 @@ address {
       font-size: 28px; }
     .bannerSlogan h1 span:nth-child(2) {
       font-size: 32px; }
-  .product-image-slider {
-    margin-top: 46px; }
   .close-bottle, .open-bottle {
     background-position: top; }
   .blockButton {
     position: relative;
-    margin-top: -100px; }
+    margin: 0 auto -100px;
+    left: calc(50% - 138px); }
   .hemenAlRoundIcon {
     width: 64px;
     height: 64px;
