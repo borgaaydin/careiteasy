@@ -30,8 +30,13 @@ function getBackgroundSize(index) {
     return coverHeight;
 }
 
+function is_touch_device() {
+    return 'ontouchstart' in window        // works on most browsers
+        || navigator.maxTouchPoints;       // works on IE10/11 and Surface
+}
+
 $(function() {
-    if (("ontouchstart" in document.documentElement)) {
+    if (!(is_touch_device())) {
         $('.menu_nav_container').addClass("noTouch");
         $('.upIcon').addClass("noTouch");
         $('.hemenAlRoundIcon').addClass("noTouch");
