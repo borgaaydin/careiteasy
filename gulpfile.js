@@ -60,14 +60,12 @@ gulp.task('default', function () {
         .pipe(concat('style.css'))
         .pipe(uncss({
             html: ['index.html',
-                'landingPage.html',
-                'http://localhost:8888/careiteasy/',
-                'http://185.28.3.244:91/Order/ShoppingCart',
-                'http://185.28.3.244:91/giris?type=kayit',],
+                'http://www.careiteasy.com'],
             ignore: [
                 ".animated",
                 ".hinge",
                 ".fadeInRightBig",
+                ".fa-instagram",
                 /.*noTouch.*/
             ]
         }))

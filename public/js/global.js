@@ -27,6 +27,8 @@ function getBackgroundSize(index) {
         var scale = (coverWidth / width);
         var coverHeight = height * scale;
     }
+    console.log(coverHeight);
+
     return coverHeight;
 }
 
